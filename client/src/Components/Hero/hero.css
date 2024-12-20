@@ -1,0 +1,214 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #141414; /* Adjust based on your design's background */
+    color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .hero {
+    width: 100%;
+    min-height: 100vh; /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    background-color: #141414; /* Adjust as needed */
+  }
+  
+  .hero-container {
+    width: 100%;
+    padding: 0 40px; /* Adds horizontal padding for content alignment */
+  }
+  
+  /* Navigation Section */
+  .hero-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    background: url('/path-to-your-logo.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li:hover {
+    color: #f39c12; /* Highlight color */
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-icons div {
+    width: 24px;
+    height: 24px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-icons div:hover {
+    background: #f39c12;
+  }
+  
+  /* Hero Section */
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+  }
+  
+  .hero-info {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .hero-info h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #f39c12;
+    margin-bottom: 10px;
+  }
+  
+  .hero-info p {
+    font-size: 32px;
+    font-weight: 300;
+    color: #dddddd;
+    margin-bottom: 20px;
+  }
+  
+  .hero-rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-rating .stars {
+    color: #FFD700; /* Gold star color */
+    font-size: 18px;
+  }
+  
+  .hero-rating .imdb {
+    background: #FFD700;
+    color: #141414;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .hero-rating .studio {
+    font-size: 14px;
+    color: #888888;
+    font-weight: 400;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #bbbbbb;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .download-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #f39c12;
+    color: #141414;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  .info-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #f39c12;
+    border: 2px solid #f39c12;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .info-btn:hover {
+    background-color: #f39c12;
+    color: #141414;
+  }
+  
+  /* Hero Image */
+  .hero-image {
+    flex: 1;
+    height: 500px;
+    background: url('/path-to-hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Make full-width adjustments */
+  .hero-image,
+  .hero-info {
+    padding: 0 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-info {
+      padding-right: 0;
+    }
+  
+    .hero-image {
+      margin-top: 20px;
+      height: 300px;
+    }
+  }
+  
