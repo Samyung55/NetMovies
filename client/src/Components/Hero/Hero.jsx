@@ -25,7 +25,7 @@ const Hero = () => {
         'With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld.',
       rating: 'IMDb 7.7',
       studio: 'LIONSGATE',
-      image: '/path-to-image1.jpg',
+      image: 'https://img.freepik.com/free-photo/virtual-reality-headset-popcorn_23-2148912759.jpg?t=st=1734735119~exp=1734738719~hmac=479d62204fe5fea424b8672feb36a15b1eb04126316cf10d5a3f534d9686068a&w=1060',
     },
     {
       title: 'The Dark Knight',
